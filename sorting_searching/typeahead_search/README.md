@@ -16,7 +16,8 @@ Input comes into the service as the following commands:
 
 Your task will be to write an equivalent service as a standalone program, with input files that correspond to the queries and updates to the data, and expected output files that correspond to the results obtained for each query.
 
-Input format (read from `STDIN`):
+## Input format (read from `STDIN`)
+
 Your program will be given an integer `N` on the first line of `stdin`, followed by `N` lines of the form:
 
 `<command> <command data>`
@@ -50,7 +51,7 @@ DEL u2
 QUERY 2 Adam
 ```
 
-Output format (write to `STDOUT`):
+## Output format (write to `STDOUT`)
 
 For each `QUERY` and `WQUERY` command, you should output the following line:
 
@@ -72,7 +73,7 @@ t1 u1
 u1 t1
 ```
 
-Constraints:
+## Constraints
 
 * 0 < `N` < 100000
 * 0 < number of `ADD`s < 40000
@@ -85,5 +86,13 @@ Constraints:
 
 You should aim to have your algorithm be fast enough to solve our largest test inputs in under 5 seconds, or be as close to that as possible.
 
-Notes
+## Notes
+
 In this problem, we are presenting a representative simplified version of our service for the purposes of the contest.
+
+
+# Solution
+
+Given that we want to match prefixes of strings, a trie immediately comes to mind. For each `ADD` command, insert each of the data string's token (a token is a string without spaces) into a trie. Each node `n` in the trie shall store a set of all the record IDs whose data string contains a token for which the path-label of `n` matches a prefix of that token. In other words, a trie node stores the IDs of every records at or below that node.
+
+To answer a query efficiently, search for each of the query tokens in the trie, collecting the set of record IDs that match each token. Then, compute the intersection of these sets, and sort the result of the intersection (since queries have a limit on the number of items to output, a partial sort in `O(n)` can be achieved). Set intersection can be optimized by using a heuristic that selects the set with the least number of elements, and checks if each item in that set is also in all of the other sets.
