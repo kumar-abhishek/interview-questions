@@ -6,8 +6,16 @@
 #include <stdio.h>
 
 void merge(int arrayA[], size_t arrayA_sz, int arrayB[], size_t arrayB_sz) {
-	int i, j, k;
-	i = arrayA_sz-1;
+	ssize_t i, j, k;
+
+	if (arrayA_sz == 0)
+		i = -1;
+	else
+		i = arrayA_sz-1;
+
+	if (arrayB_sz == 0)
+		return;
+
 	j = arrayB_sz-1;
 	k = arrayA_sz+arrayB_sz-1;
 
