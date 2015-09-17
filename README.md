@@ -4,7 +4,7 @@ Coding Interview practice with questions from different sources:
 
 * [Careercup](http://www.careercup.com)
 * [Pramp](www.pramp.com)
-* InterviewBit
+* [InterviewBit](https://www.interviewbit.com/)
 * Glassdoor
 * StackOverflow
 * Cracking the Coding Interview (5th Edition)
