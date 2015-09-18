@@ -22,3 +22,4 @@ The knowledge based section (and content) includes some exercises adapted from:
 * Computer Networking: A Top-Down Approach (6th Edition)
 * TCP/IP Illustrated, Volume 1 (2nd Edition)
 * The awk programming language
+* The Practice of Programming
