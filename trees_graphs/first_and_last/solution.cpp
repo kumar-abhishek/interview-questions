@@ -1,3 +1,38 @@
+/* Given a tree where each node has an arbitrary number of children, write a
+ * program that prints the first and last node of each level in the tree.
+ *
+ * If a level has only one node, that node is considered to be both the first
+ * and the last, so it should be printed twice.
+ *
+ * EXAMPLE
+ *
+ * Consider the following tree:
+ *
+ *                   1
+ *                 /   \
+ *                /     \
+ *               2       3
+ *                \     / \
+ *                 4   5   6
+ *                    /
+ *                   7
+ *                    \
+ *                     8
+ *
+ * For this tree, the output is:
+ *
+ * 1 1
+ * 2 3
+ * 4 6
+ * 7 7
+ * 8 8
+ *
+ * Note that this example shows a binary tree, but the problem deals with n-ary
+ * trees, so each node can have 0 or more children.
+ *
+ * Source: Careercup (Amazon interview)
+ *
+ */
 
 #include <iostream>
 #include <vector>
