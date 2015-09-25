@@ -6,7 +6,7 @@ Coding Interview practice with questions from different sources:
 * [Pramp](http://www.pramp.com)
 * [InterviewBit](http://www.interviewbit.com/)
 * [Glassdoor](http://www.glassdoor.com)
-* StackOverflow
+* [StackOverflow](http://www.stackoverflow.com)
 * Cracking the Coding Interview (5th Edition)
 * Cracking the Coding Interview (6th Edition)
 * Programming Interviews Exposed (3rd Edition)
