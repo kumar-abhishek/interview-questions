@@ -2,12 +2,11 @@
 
 Coding Interview practice with questions from different sources:
 
-<<<<<<< HEAD
 * [Careercup](http://www.careercup.com)
-* [Pramp](www.pramp.com)
-* InterviewBit
-* Glassdoor
-* StackOverflow
+* [Pramp](http://www.pramp.com)
+* [InterviewBit](http://www.interviewbit.com/)
+* [Glassdoor](http://www.glassdoor.com)
+* [StackOverflow](http://www.stackoverflow.com)
 * Cracking the Coding Interview (5th Edition)
 * Cracking the Coding Interview (6th Edition)
 * Programming Interviews Exposed (3rd Edition)
@@ -23,3 +22,4 @@ The knowledge based section (and content) includes some exercises adapted from:
 * Computer Networking: A Top-Down Approach (6th Edition)
 * TCP/IP Illustrated, Volume 1 (2nd Edition)
 * The awk programming language
+* The Practice of Programming
